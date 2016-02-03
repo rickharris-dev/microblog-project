@@ -7,12 +7,15 @@
                 background-color: #EEE;
             }
             
+            header, main, footer {
+                overflow:auto;
+            }
+            
             #container {
                 width: 992px;
                 margin: 0 auto;
                 background-color: #FFF;
                 overflow: auto;
-                
             }
             
             #logo {
@@ -72,6 +75,74 @@
             #links ul li::before {
                 
             }
+            
+            article {
+                width:60%;
+                background:#333;
+                float:left;
+                clear:left;
+            }
+            
+            .update {
+                width:80%;
+                margin: 20px auto;
+                background:#FFF;
+                padding: 10px 20px;
+                border-radius: 5px;
+                overflow:auto;
+            }
+            
+            .id {
+                float:left;
+                clear:left;
+                overflow:auto;
+            }
+            
+            .profile {
+                background-color:red;
+                width:200px;
+                height:200px;
+                float:left;
+                clear:left;
+            }
+            
+            .name {
+                float:left;
+                clear:left;                
+            }
+            
+            .name h3 {
+                
+            }
+            
+            .user {
+                float:left;
+                clear:left;                
+            }
+            
+            .user h4 {
+                
+            }
+            .status {
+                float:right;
+                clear:right;
+            }
+            .content {
+
+            }
+            
+            .content p {
+                
+            }
+            
+            .posted {
+                float: right;
+                clear: right;
+            }
+            
+            .posted p {
+                
+            }
         </style>
     </head>
     <body>
@@ -97,8 +168,31 @@
                     </ul>
                 </div>
             </header>
-            <article>
-            </article>
+            <main>
+                <article>
+                    <div class="update">
+                        <div class="id">
+                            <div class="profile"></div>
+                            <div class="name">
+                                <h3>Rick Harris</h3>
+                            </div>
+                            <div class="user">
+                                <h4>@rick.harris</h4>
+                            </div>
+                        </div>
+                        <div class="status">
+                            <div class="content">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            </div>
+                            <div class="posted">
+                                <p>February 2, 2016 5:14PM</p>
+                            </div>
+                        </div>
+                    </div>    
+                </article>
+                <aside>
+                </aside>
+            </main>
             <footer>
             </footer>
         </div>    
