@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <style>
+            body {
+                background-color: #EEE;
+            }
+            
+            #container {
+                width: 992px;
+                margin: 0 auto;
+                background-color: #FFF;
+                overflow: auto;
+                
+            }
+            
+            #logo {
+                width: 200px;
+                float: left;
+                clear: left;
+            }
+            
+            #logo img {
+                width: 100%;
+            }
+            
+            #tagline {
+                float: left;
+                clear: left;
+            }
+            
+            #tagline h2 {
+                font-family: sans-serif;
+                font-weight: 400;
+                font-size: 18px;
+            }
+            
+            #account {
+                float: right;
+                clear: right;
+            }
+            
+            #account ul {
+                list-style-type: none;
+                float:right;
+            }
+            
+            #account ul li {
+                display:inline;
+            }
+            
+            #account ul li + li::before {
+                content: " | ";
+            }
+            
+            #links {
+                float: right;
+                clear: right;
+                width: 60%;
+            }
+            
+            #links ul {
+                float:left;
+                list-style-type: none;
+            }
+            
+            #links ul li {
+                display:inline-block;
+            }
+            
+            #links ul li::before {
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <div id="logo">
+                    <img src="http://www3.nd.edu/~rharris8/newsletter/logo.png" alt="SoLife"/>
+                </div>
+                <div id="account">
+                    <ul>
+                        <li>Edit My Profile</li>
+                        <li>Logout</li>
+                    </ul>
+                </div>
+                <div id="tagline">
+                    <h2>Your Passport to Life.</h2>
+                </div>
+                <div id="links">
+                    <ul>
+                        <li>Home</li>
+                        <li>My statuses</li>
+                        <li>All users</li>
+                    </ul>
+                </div>
+            </header>
+            <article>
+            </article>
+            <footer>
+            </footer>
+        </div>    
+    </body>
+</html>
