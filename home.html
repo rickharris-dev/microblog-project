@@ -3,12 +3,73 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <style>
+            /* http://meyerweb.com/eric/tools/css/reset/ 
+               v2.0 | 20110126
+               License: none (public domain)
+            */
+
+            html, body, div, span, applet, object, iframe,
+            h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+            a, abbr, acronym, address, big, cite, code,
+            del, dfn, em, img, ins, kbd, q, s, samp,
+            small, strike, strong, sub, sup, tt, var,
+            b, u, i, center,
+            dl, dt, dd, ol, ul, li,
+            fieldset, form, label, legend,
+            table, caption, tbody, tfoot, thead, tr, th, td,
+            article, aside, canvas, details, embed, 
+            figure, figcaption, footer, header, hgroup, 
+            menu, nav, output, ruby, section, summary,
+            time, mark, audio, video {
+                margin: 0;
+                padding: 0;
+                border: 0;
+                font-size: 100%;
+                font: inherit;
+                vertical-align: baseline;
+            }
+            
+            /* HTML5 display-role reset for older browsers */
+            article, aside, details, figcaption, figure, 
+            footer, header, hgroup, menu, nav, section {
+                display: block;
+            }
+            
+            body {
+                line-height: 1;
+            }
+            
+            ol, ul {
+                list-style: none;
+            }
+            
+            blockquote, q {
+                quotes: none;
+            }
+            
+            blockquote:before, blockquote:after,
+            q:before, q:after {
+                content: '';
+                content: none;
+            }
+            
+            table {
+                border-collapse: collapse;
+                border-spacing: 0;
+            }
+            
+            /* End Reset CSS */
+            
             body {
                 background-color: #EEE;
             }
             
             header, main, footer {
                 overflow:auto;
+            }
+            
+            header {
+                border-bottom: solid 2px black;
             }
             
             #container {
@@ -26,11 +87,14 @@
             
             #logo img {
                 width: 100%;
+                margin: 5px 0 0 5px;
             }
             
             #tagline {
                 float: left;
                 clear: left;
+                margin: 5px 0 5px 20px;
+                font-style: italic;
             }
             
             #tagline h2 {
@@ -42,6 +106,7 @@
             #account {
                 float: right;
                 clear: right;
+                margin: 10px;
             }
             
             #account ul {
@@ -51,16 +116,28 @@
             
             #account ul li {
                 display:inline;
+
+            }
+            
+            #account a, a:visited {
+                color:#086D7F;
+                text-decoration:none;
+            }
+            
+            #account a:hover {
+                color:#0188A5;
             }
             
             #account ul li + li::before {
                 content: " | ";
+                padding: 5px;
             }
             
             #links {
                 float: right;
                 clear: right;
                 width: 60%;
+                margin-bottom: 10px;
             }
             
             #links ul {
@@ -70,20 +147,39 @@
             
             #links ul li {
                 display:inline-block;
+                height: 30px;
+                width: 95px;
+                color:#FFF;
+                padding: 10px 10px 0px;
+                margin: 5px;
+                line-height: 20px;
+                font-size: 16px;
+                border-radius: 5px;
+                text-align: center;
+                background-color:#2AAAC7;
+            }
+            
+            #links ul li:hover {
+                background-color:#0188A5;
             }
             
             #links ul li::before {
-                
+                content: "☼ "
+            }
+            
+            main {
+                background:url("http://design.ubuntu.com/wp-content/uploads/dot-types-wide.gif");
+                background-repeat: repeat;
             }
             
             article {
-                width:60%;
-                background:#333;
+                width:65%;
+                background:#CCC;
                 float:left;
                 clear:left;
             }
             
-            .update {
+            .status {
                 width:80%;
                 margin: 20px auto;
                 background:#FFF;
@@ -92,18 +188,41 @@
                 overflow:auto;
             }
             
+            .status p {
+                font-family:sans-serif;
+                font-size:16px;
+                line-height:20px;
+            }
+            
+            .content {
+                overflow: auto;
+            }
+            
             .id {
                 float:left;
                 clear:left;
-                overflow:auto;
+                margin-right:20px;
+                margin-bottom:5px;
             }
             
             .profile {
-                background-color:red;
-                width:200px;
-                height:200px;
+                background-color:#EEE;
+                border:#2AAAC7 1px solid;
+                width:125px;
+                height:125px;
                 float:left;
                 clear:left;
+                border-radius: 5px;
+            }
+            
+            .image {
+                background:url("https://holbertonintranet.s3.amazonaws.com/users/photos/000/000/038/thumb/rick.jpg");
+                background-size:100% auto;
+                background-color:#FFF;
+                width:115px;
+                height:115px;
+                margin: 5px;
+                border-radius: 5px;
             }
             
             .name {
@@ -112,7 +231,10 @@
             }
             
             .name h3 {
-                
+                font-size:16px;
+                font-weight:bold;
+                line-height: 18px;
+                margin-top: 5px;
             }
             
             .user {
@@ -121,27 +243,69 @@
             }
             
             .user h4 {
-                
-            }
-            .status {
-                float:right;
-                clear:right;
-            }
-            .content {
-
-            }
-            
-            .content p {
-                
+                font-size:14px;
+                line-height: 16px;
             }
             
             .posted {
                 float: right;
                 clear: right;
+                margin-top: 10px;
             }
             
             .posted p {
+                font-size: 14px;
+            }
+            
+            aside {
+                width: 35%;
+                float:right;
+                clear:right;
+                overflow:auto;
+            }
+            
+            #userProfile {
+                border:solid 1px #2AAAC7;
+                border-radius: 10px;
+                width:90%;
+                background: #DDD;
+                padding: 10px 0;
+                margin: 10px auto;
                 
+            }
+            
+            #userImage {
+                background-color: #FFF;
+                background: url("https://holbertonintranet.s3.amazonaws.com/users/photos/000/000/017/thumb/IMG_1916.JPG?1453314869");
+                background-size: 100% auto;
+                width: 200px;
+                height: 200px;
+                margin: 10px auto;
+                border-radius: 10px;
+            }
+            
+            #userName {
+                text-align:center;
+            }
+            
+            #userName h2 {
+                font-size: 20px;
+                font-family: sans-serif;
+            }
+            
+            #userBio {
+                width:90%;
+                margin: 10px auto;
+            }
+            
+            #userBio p {
+                font-size:16px;
+            }
+            
+            footer {
+                height:100px;
+                background:#222;
+                clear:both;
             }
         </style>
     </head>
@@ -153,8 +317,8 @@
                 </div>
                 <div id="account">
                     <ul>
-                        <li>Edit My Profile</li>
-                        <li>Logout</li>
+                        <li><a href="#">Edit my profile</a></li>
+                        <li><a href="#">Logout</a></li>
                     </ul>
                 </div>
                 <div id="tagline">
@@ -162,35 +326,65 @@
                 </div>
                 <div id="links">
                     <ul>
-                        <li>Home</li>
-                        <li>My statuses</li>
-                        <li>All users</li>
+                        <a href="#"><li>Home</li></a>
+                        <a href="#"><li>My statuses</li></a>
+                        <a href="#"><li>All users</li></a>
                     </ul>
                 </div>
             </header>
             <main>
                 <article>
-                    <div class="update">
-                        <div class="id">
-                            <div class="profile"></div>
-                            <div class="name">
-                                <h3>Rick Harris</h3>
+                    <div class="status">
+                        <div class="content">
+                            <div class="id">
+                                <div class="profile">
+                                    <div class="image">
+                                    </div>
+                                </div>
+                                <div class="name">
+                                    <h3>Rick Harris</h3>
+                                </div>
+                                <div class="user">
+                                    <h4>@rick.harris</h4>
+                                </div>
                             </div>
-                            <div class="user">
-                                <h4>@rick.harris</h4>
-                            </div>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                         </div>
-                        <div class="status">
-                            <div class="content">
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                            </div>
-                            <div class="posted">
-                                <p>February 2, 2016 5:14PM</p>
-                            </div>
+                        <div class="posted">
+                                    <p>February 2, 2016 5:14PM</p>
                         </div>
-                    </div>    
+                    </div>
+                    <div class="status">
+                        <div class="content">
+                            <div class="id">
+                                <div class="profile">
+                                    <div class="image">
+                                    </div>
+                                </div>
+                                <div class="name">
+                                    <h3>Rick Harris</h3>
+                                </div>
+                                <div class="user">
+                                    <h4>@rick.harris</h4>
+                                </div>
+                            </div>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        </div>
+                        <div class="posted">
+                            <p>February 2, 2016 5:14PM</p>
+                        </div>
+                    </div>
                 </article>
                 <aside>
+                    <div id="userProfile">
+                        <div id="userImage"></div>
+                        <div id="userName">
+                            <h2>Asaia Palacios</h2>
+                        </div>
+                        <div id="userBio">
+                            <p>This is a section that is all about me.</p>
+                        </div>
+                    </div>
                 </aside>
             </main>
             <footer>
