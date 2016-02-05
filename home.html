@@ -122,10 +122,14 @@
             #account a, a:visited {
                 color:#086D7F;
                 text-decoration:none;
+                transition: background-color 2s ease; 
             }
             
             #account a:hover {
-                color:#0188A5;
+                color:linen;
+                text-decoration: underline;
+                background-color:#086D7F;
+                transition: color 2s ease;
             }
             
             #account ul li + li::before {
@@ -156,11 +160,15 @@
                 font-size: 16px;
                 border-radius: 5px;
                 text-align: center;
-                background-color:#2AAAC7;
+                background: linear-gradient(#86C8D4, #2AAAC7);
             }
             
             #links ul li:hover {
-                background-color:#0188A5;
+                background: linear-gradient(#2AAAC7, #86C8D4);
+            }
+            
+            #links ul li:active {
+                background: #2AAAC7;
             }
             
             #links ul li::before {
