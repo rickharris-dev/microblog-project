@@ -1,0 +1,415 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* End Reset CSS */
+
+body {
+    background-color: #EEE;
+}
+
+header, main, footer {
+    overflow:auto;
+}
+
+header {
+    border-bottom: solid 2px black;
+}
+
+#container {
+    width: 992px;
+    margin: 0 auto;
+    background-color: #FFF;
+    overflow: auto;
+}
+
+#logo {
+    width: 200px;
+    float: left;
+    clear: left;
+}
+
+#logo img {
+    width: 100%;
+    margin: 5px 0 0 5px;
+}
+
+#tagline {
+    float: left;
+    clear: left;
+    margin: 5px 0 5px 20px;
+    font-style: italic;
+}
+
+#tagline h2 {
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+#account {
+    float: right;
+    clear: right;
+    margin: 10px;
+}
+
+#account ul {
+    list-style-type: none;
+    float:right;
+}
+
+#account ul li {
+    display:inline;
+
+}
+
+#account a, a:visited {
+    color:#086D7F;
+    text-decoration:none;
+    transition: background-color 2s ease,
+                color 2s ease;
+}
+
+#account a:hover {
+    color:linen;
+    text-decoration: underline;
+    background-color:#086D7F;
+}
+
+#account ul li + li::before {
+    content: " | ";
+    padding: 5px;
+}
+
+#links {
+    float: right;
+    clear: right;
+    width: 60%;
+    margin-bottom: 10px;
+}
+
+#links ul {
+    float:left;
+    list-style-type: none;
+}
+
+#links ul li {
+    display:inline-block;
+    height: 30px;
+    width: 95px;
+    color:#FFF;
+    padding: 10px 10px 0px;
+    margin: 5px;
+    line-height: 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-align: center;
+    background: linear-gradient(#86C8D4, #2AAAC7);
+}
+
+#links ul li:hover {
+    background: linear-gradient(#2AAAC7, #86C8D4);
+}
+
+#links ul li:active {
+    background: #2AAAC7;
+}
+
+#links ul li::before {
+    content: "☼ "
+}
+
+main {
+    background:url("http://design.ubuntu.com/wp-content/uploads/dot-types-wide.gif");
+    background-repeat: repeat;
+}
+
+article {
+    width:65%;
+    background:#CCC;
+    float:left;
+    clear:left;
+}
+
+.status {
+    width:80%;
+    margin: 20px auto;
+    background:#FFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    overflow:auto;
+}
+
+.status p {
+    font-family:sans-serif;
+    font-size:16px;
+    line-height:20px;
+}
+
+.content {
+    overflow: auto;
+}
+
+.id {
+    float:left;
+    clear:left;
+    margin-right:20px;
+    margin-bottom:5px;
+}
+
+.profile {
+    background-color:#EEE;
+    border:#2AAAC7 1px solid;
+    width:125px;
+    height:125px;
+    float:left;
+    clear:left;
+    border-radius: 5px;
+}
+
+.image {
+    background:url("https://holbertonintranet.s3.amazonaws.com/users/photos/000/000/038/thumb/rick.jpg");
+    background-size:100% auto;
+    background-color:#FFF;
+    width:115px;
+    height:115px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.name {
+    float:left;
+    clear:left;                
+}
+
+.name h3 {
+    font-size:16px;
+    font-weight:bold;
+    line-height: 18px;
+    margin-top: 5px;
+}
+
+.user {
+    float:left;
+    clear:left;                
+}
+
+.user h4 {
+    font-size:14px;
+    line-height: 16px;
+}
+
+.posted {
+    float: right;
+    clear: right;
+    margin-top: 10px;
+}
+
+.posted p {
+    font-size: 14px;
+}
+
+aside {
+    width: 35%;
+    float:right;
+    clear:right;
+    overflow:auto;
+}
+
+.allUsers {
+    overflow: auto;
+    padding: 20px;
+}
+
+.userProfile {
+    border:solid 1px #2AAAC7;
+    border-radius: 10px;
+    width:275px;
+    height:390px;
+    background: #DDD;
+    padding: 10px 0;
+    margin: 10px 20px;
+    float:left;
+}
+
+.userImage {
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+.userName {
+    text-align:center;
+}
+
+.userName h2 {
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.userBio {
+    width:90%;
+    height:85px;
+    margin: 10px auto;
+}
+
+.userBio p {
+    font-size:16px;
+}
+
+.follow {
+    float: right;
+    position:relative;
+    bottom: 5px;
+    right: 5px;
+    padding-right: 5px;
+    font-weight:600;
+}
+
+.follow ul {
+
+    list-style-type: none;
+}
+
+.follow ul li {
+    display:inline-block;
+    height: 30px;
+    width:65px;
+    color:#222;
+    padding: 10px 10px 0px;
+    margin: 5px;
+    line-height: 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-align: center;
+    background: linear-gradient(#FFF, #86C8D4);
+}
+
+.follow ul li:hover {
+    background: linear-gradient(#86C8D4, #FFF);
+    color: #555;
+}
+
+.follow ul li:active {
+    background: #86C8D4;
+}
+
+footer {
+    height:100px;
+    background:#222;
+    clear:both;
+}
+
+#beta {
+    background-color:linen;
+    border:solid 2px #222;
+    border-radius: 40px;
+    width:225px;
+    height:100px;
+    padding: 10px 20px;
+    position:fixed;
+    bottom:10px;
+    right:10px;
+    text-align: center;
+}
+
+#beta h2 {
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+#beta p {
+    font-family:sans-serif;
+    font-size: 16px;
+}
+
+#beta p strong {
+    font-weight: bold;
+}
+
+/* Stamp Styling */
+.hacker {
+    background: url("https://www.colourbox.com/preview/8844172-hacker-stamp.jpg");
+    background-size: auto 50%;
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    background-color: #FFF;
+}
+
+.soccer {
+    background: url("http://static5.depositphotos.com/1020857/415/v/950/depositphotos_4152819-Soccer-player-stamp.jpg");
+    background-size: auto 50%;
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    background-color: #FFF;
+}
+
+.sushi {
+    background: url("http://previews.123rf.com/images/asiln/asiln1408/asiln140800045/30823204-sushi-stamp-Stock-Vector.jpg");
+    background-size: auto 50%;
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    background-color: #FFF;
+}
+
+.concert {
+    background: url("http://previews.123rf.com/images/carmendorin/carmendorin1311/carmendorin131100138/23765557-Grunge-rubber-stamp-with-word-Concert-vector-illustration-Stock-Vector.jpg");
+    background-size: auto 50%;
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    background-color: #FFF;
+}

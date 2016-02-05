@@ -1,0 +1,33 @@
+header {
+    border-bottom: solid 2px black;
+}
+
+article {
+    float:right;
+    clear:right;
+}
+
+.profile {
+    background-color:#EEE;
+    border:#2AAAC7 1px solid;
+    width:75px;
+    height:75px;
+}
+
+.image {
+    width:65px;
+    height:65px;
+}
+
+.posted p {
+    font-size: 14px;
+}
+
+aside {
+    float:left;
+    clear:left;
+}
+
+.userProfile {
+    width:90%;
+}
