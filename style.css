@@ -158,6 +158,13 @@ header {
     background: linear-gradient(#86C8D4, #2AAAC7);
 }
 
+#links ul li a {
+    color: #FFF;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+}
+
 #links ul li:hover {
     background: linear-gradient(#2AAAC7, #86C8D4);
 }
