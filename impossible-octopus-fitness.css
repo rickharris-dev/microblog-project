@@ -43,7 +43,7 @@ article img.right {
     text-decoration:none
 }
 
-aside ul li a {
+aside ul li a, aside ul li a:visited {
     color:#2AAAC7;
     text-decoration: none;
     font-size: 20px;
