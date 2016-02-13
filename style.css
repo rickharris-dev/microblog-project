@@ -145,7 +145,8 @@ header {
 }
 
 #links ul li {
-    display:inline-block;
+    display:block;
+    float:left;
     height: 30px;
     width: 95px;
     color:#FFF;
