@@ -1,0 +1,300 @@
+@media screen and (max-width: 767px) {
+    header, main, footer {
+        overflow:auto;
+    }
+
+    #container {
+        width: 100%;
+        margin: 0 auto;
+        overflow: auto;
+    }
+
+    #logo {
+        width: 200px;
+        float:none;
+        clear: none;
+    }
+
+    #logo img {
+        width: 100%;
+        margin: 5px 0 0 5px;
+    }
+
+    #tagline {
+        float: none;
+        clear: none;
+        margin: 5px 0 5px 20px;
+    }
+
+    #tagline h2 {
+        font-size: 18px;
+    }
+
+    #account {
+        float: none;
+        clear: none;
+        margin: 10px;
+    }
+
+    #account ul {
+        float:none;
+    }
+
+    #account ul li {
+        display:inline;
+
+    }
+
+    #account a, a:visited {
+        color:#086D7F;
+        transition: background-color 2s ease,
+                    color 2s ease;
+    }
+
+    #account a:hover {
+        color:linen;
+        text-decoration: underline;
+        background-color:#086D7F;
+    }
+
+    #account ul li + li::before {
+        content: " | ";
+        padding: 5px;
+    }
+
+    #links {
+        float: right;
+        clear: right;
+        width: 60%;
+        margin-bottom: 10px;
+    }
+
+    #links ul {
+        float:left;
+    }
+
+    #links ul li {
+        display:block;
+        float: left; 
+        height: 30px;
+        width: 95px;
+        padding: 10px 10px 0px;
+        margin: 5px;
+        line-height: 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        text-align: center;
+        background: linear-gradient(#86C8D4, #2AAAC7);
+    }
+
+    #links ul li a {
+        color: #FFF;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    #links ul li:hover {
+        background: linear-gradient(#2AAAC7, #86C8D4);
+    }
+
+    #links ul li:active {
+        background: #2AAAC7;
+    }
+
+    #links ul li::before {
+        content: "☼ "
+    }
+
+    main {
+        background:url("http://design.ubuntu.com/wp-content/uploads/dot-types-wide.gif");
+        background-repeat: repeat;
+    }
+
+    article {
+        width:100%;
+        float:none;
+        clear:none;
+    }
+
+    .status {
+        width:80%;
+        margin: 20px auto;
+        padding: 10px 20px;
+        border-radius: 5px;
+    }
+
+    .status p {
+        font-size:16px;
+        line-height:20px;
+    }
+
+    .name h3 {
+        font-size:16px;
+        font-weight:bold;
+        line-height: 18px;
+        margin-top: 5px;
+    }
+
+    .user h4 {
+        font-size:14px;
+        line-height: 16px;
+    }
+
+    .posted {
+        margin-top: 10px;
+    }
+
+    .posted p {
+        font-size: 14px;
+    }
+
+    aside {
+        width: 100%;
+        float:none;
+        clear:none;
+        overflow:auto;
+    }
+
+    .allUsers {
+        padding: 20px;
+    }
+
+    .userProfile {
+        border:solid 1px #2AAAC7;
+        border-radius: 10px;
+        width:275px;
+        height:390px;
+        padding: 10px 0;
+        margin: 10px 20px;
+        float:left;
+    }
+
+    .userImage {
+        width: 200px;
+        height: 200px;
+        margin: 10px auto;
+        border-radius: 10px;
+    }
+
+    .userName {
+        text-align:center;
+    }
+
+    .userName h2 {
+        font-size: 20px;
+    }
+
+    .userBio {
+        width:90%;
+        height:85px;
+        margin: 10px auto;
+    }
+
+    .userBio p {
+        font-size:16px;
+    }
+
+    .follow {
+        float: right;
+        position:relative;
+        bottom: 5px;
+        right: 5px;
+        padding-right: 5px;
+    }
+
+    .follow ul {
+
+        list-style-type: none;
+    }
+
+    .follow ul li {
+        display:inline-block;
+        height: 30px;
+        width:65px;
+        color:#222;
+        padding: 10px 10px 0px;
+        margin: 5px;
+        line-height: 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        text-align: center;
+        background: linear-gradient(#FFF, #86C8D4);
+    }
+
+    .follow ul li:hover {
+        background: linear-gradient(#86C8D4, #FFF);
+        color: #555;
+    }
+
+    .follow ul li:active {
+        background: #86C8D4;
+    }
+
+    footer {
+        height:100px;
+        background:#222;
+        clear:both;
+    }
+
+    #beta {
+        background-color:linen;
+        border:solid 2px #222;
+        border-radius: 40px;
+        width:225px;
+        height:100px;
+        padding: 10px 20px;
+        position:fixed;
+        bottom:10px;
+        right:10px;
+        text-align: center;
+    }
+
+    #beta h2 {
+        font-weight: bold;
+        font-family: sans-serif;
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    #beta p {
+        font-family:sans-serif;
+        font-size: 16px;
+    }
+
+    #beta p strong {
+        font-weight: bold;
+    }
+
+    /* Stamp Styling */
+    .hacker {
+        background: url("https://www.colourbox.com/preview/8844172-hacker-stamp.jpg");
+        background-size: auto 50%;
+        background-repeat: no-repeat;
+        background-position: 95% 50%;
+        background-color: #FFF;
+    }
+
+    .soccer {
+        background: url("http://static5.depositphotos.com/1020857/415/v/950/depositphotos_4152819-Soccer-player-stamp.jpg");
+        background-size: auto 50%;
+        background-repeat: no-repeat;
+        background-position: 95% 50%;
+        background-color: #FFF;
+    }
+
+    .sushi {
+        background: url("http://previews.123rf.com/images/asiln/asiln1408/asiln140800045/30823204-sushi-stamp-Stock-Vector.jpg");
+        background-size: auto 50%;
+        background-repeat: no-repeat;
+        background-position: 95% 50%;
+        background-color: #FFF;
+    }
+
+    .concert {
+        background: url("http://previews.123rf.com/images/carmendorin/carmendorin1311/carmendorin131100138/23765557-Grunge-rubber-stamp-with-word-Concert-vector-illustration-Stock-Vector.jpg");
+        background-size: auto 50%;
+        background-repeat: no-repeat;
+        background-position: 95% 50%;
+        background-color: #FFF;
+    }
+}
