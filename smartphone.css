@@ -1,5 +1,5 @@
 @media screen 
-    and (max-device-width: 767px) {
+    and (max-width: 767px) {
     header, main, footer {
         overflow:auto;
     }
@@ -258,6 +258,10 @@
 
     .follow ul li:active {
         background: #86C8D4;
+    }
+
+    .trending {
+        margin:0 5% 4%;
     }
 
     footer {
