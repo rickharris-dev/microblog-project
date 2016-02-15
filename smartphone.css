@@ -23,7 +23,7 @@
     }
     
     #logo {
-        width: 225px;
+        width: 50vw;
         margin:0 auto;
         float: none;
         clear: none;
@@ -41,7 +41,7 @@
     }
 
     #tagline h2 {
-        font-size: 18px;
+        font-size: 4vw;
     }
 
     #account {
@@ -59,10 +59,10 @@
         float:none;
         height: 35px;
         width: 100%;
-        padding: 15px 10px 0px;
+        padding: 1vh 1vw;
         margin: 2px auto;
-        line-height: 20px;
-        font-size: 18px;
+        line-height: 3.5vw;
+        font-size: 3.5vw;
         border-radius: 0;
         text-align: center;
         background: #444;
@@ -100,10 +100,10 @@
         float:none;
         height: 35px;
         width: 100%;
-        padding: 15px 10px 0px;
+        padding: 1vh 1vw;
         margin: 2px auto;
-        line-height: 18px;
-        font-size: 20px;
+        line-height: 3.5vw;
+        font-size: 3.5vw;
         border-radius: 0;
         text-align: center;
         background: linear-gradient(#86C8D4, #2AAAC7);
@@ -111,8 +111,8 @@
 
     #links ul li a {
         color: #FFF;
-        font-size: 18px;
-        line-height: 20px;
+        line-height: 3.5vw;
+        font-size: 3.5vw;
     }
 
     #links ul li:hover {
@@ -135,7 +135,7 @@
 
     article {
         width:100%;
-        margin
+        overflow: auto;
         float:none;
         clear:none;
         border-bottom: solid 2px black;
@@ -150,7 +150,7 @@
     }
 
     .status p {
-        font-size:16px;
+        font-size:18px;
         line-height:20px;
     }
 
@@ -201,7 +201,6 @@
         width: 100px;
         height: 100px;
         background:no-repeat;
-        
         float:left;
         margin: 10px 20px;
         border-radius: 10px;
@@ -223,7 +222,7 @@
     }
 
     .userBio p {
-        font-size:18px;
+        font-size:1.4vw;
     }
 
     .follow {
@@ -263,11 +262,8 @@
 
     footer {
         height:50px;
-        background:#222;
-        clear:both;
-        color: #FFF;
+        clear:none;
         padding: 10px 0;
-        text-align: center;
     }
 
     #beta {

@@ -214,7 +214,7 @@ article {
 }
 
 .status p {
-    font-family:sans-serif;
+    font-family:serif;
     font-size:16px;
     line-height:20px;
 }
@@ -368,10 +368,19 @@ aside {
     background: #86C8D4;
 }
 
+.follow ul li a, a:visited {
+    color:#444;
+    text-decoration: none;
+}
+
 footer {
     height:100px;
     background:#222;
     clear:both;
+    background:#444;
+    color: #FFF;
+    text-align: center;
+    padding: 10px 0px;
 }
 
 #beta {
