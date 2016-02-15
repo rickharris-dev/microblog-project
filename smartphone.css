@@ -8,9 +8,22 @@
         margin: 0 auto;
         overflow: auto;
     }
-
+    
+    #hleft {
+        float:none;
+        clear:none;
+        text-align: center;
+    }
+    
+    #hright{
+        float:none;
+        clear:none;
+        width:100%;
+    }
+    
     #logo {
-        width: 200px;
+        width: 225px;
+        margin:0 auto;
         float: none;
         clear: none;
     }
@@ -33,7 +46,7 @@
     #account {
         float: none;
         clear: none;
-        margin: 10px;
+        margin: 0px;
     }
 
     #account ul {
@@ -41,55 +54,63 @@
     }
 
     #account ul li {
-        display:inline;
-
+        display:block;
+        float:none;
+        height: 35px;
+        width: 100%;
+        padding: 15px 10px 0px;
+        margin: 2px auto;
+        line-height: 20px;
+        font-size: 18px;
+        border-radius: 0;
+        text-align: center;
+        background: #444;
     }
 
     #account a, a:visited {
-        color:#086D7F;
-        transition: background-color 2s ease,
-                    color 2s ease;
+        color:#FFF;
+        transition: none;
     }
 
     #account a:hover {
         color:linen;
-        text-decoration: underline;
-        background-color:#086D7F;
+        text-decoration: none;
+        background-color: none;
     }
 
     #account ul li + li::before {
-        content: " | ";
-        padding: 5px;
+        content: none;
+        padding: 0;
     }
 
     #links {
-        float: right;
-        clear: right;
-        width: 60%;
+        float: none;
+        clear: none;
+        margin-top: 6px;
         margin-bottom: 10px;
     }
 
     #links ul {
-        float:left;
+        float:none;
     }
 
     #links ul li {
         display:block;
-        float:left;
-        height: 30px;
-        width: 95px;
-        padding: 10px 10px 0px;
-        margin: 5px;
-        line-height: 20px;
-        font-size: 16px;
-        border-radius: 5px;
+        float:none;
+        height: 35px;
+        width: 100%;
+        padding: 15px 10px 0px;
+        margin: 2px auto;
+        line-height: 18px;
+        font-size: 20px;
+        border-radius: 0;
         text-align: center;
         background: linear-gradient(#86C8D4, #2AAAC7);
     }
 
     #links ul li a {
         color: #FFF;
-        font-size: 16px;
+        font-size: 18px;
         line-height: 20px;
     }
 
@@ -108,12 +129,15 @@
     main {
         background:url("http://design.ubuntu.com/wp-content/uploads/dot-types-wide.gif");
         background-repeat: repeat;
+        overflow:auto;
     }
 
     article {
         width:100%;
+        margin
         float:none;
         clear:none;
+        border-bottom: solid 2px black;
     }
 
     .status {
@@ -121,6 +145,7 @@
         margin: 20px auto;
         padding: 10px 20px;
         border-radius: 5px;
+        overflow: auto;
     }
 
     .status p {
@@ -163,26 +188,31 @@
     .userProfile {
         border:solid 1px #2AAAC7;
         border-radius: 10px;
-        width:275px;
-        height:390px;
+        width:90%;
+        height: auto;
         padding: 10px 0;
-        margin: 10px 20px;
-        float:left;
+        margin: 20px auto;
+        overflow:auto;
+        float:none;
     }
 
     .userImage {
-        width: 200px;
-        height: 200px;
-        margin: 10px auto;
+        width: 100px;
+        height: 100px;
+        background:no-repeat;
+        
+        float:left;
+        margin: 10px 20px;
         border-radius: 10px;
     }
 
     .userName {
+        margin-top: 25px;
         text-align:center;
     }
 
     .userName h2 {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .userBio {
@@ -192,7 +222,7 @@
     }
 
     .userBio p {
-        font-size:16px;
+        font-size:18px;
     }
 
     .follow {
@@ -231,19 +261,22 @@
     }
 
     footer {
-        height:100px;
+        height:50px;
         background:#222;
         clear:both;
+        color: #FFF;
+        padding: 10px 0;
+        text-align: center;
     }
 
     #beta {
         background-color:linen;
         border:solid 2px #222;
-        border-radius: 40px;
-        width:225px;
+        border-radius: 0;
+        width:60%;
         height:100px;
-        padding: 10px 20px;
-        position:fixed;
+        padding: 0 20%;
+        position:static;
         bottom:10px;
         right:10px;
         text-align: center;

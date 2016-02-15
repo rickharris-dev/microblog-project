@@ -74,6 +74,19 @@ header {
     overflow: auto;
 }
 
+#hleft {
+    float:left;
+    clear:left;
+    overflow:auto;
+}
+
+#hright {
+    float:right;
+    clear:right;
+    width:60%;
+    overflow: auto;
+}
+
 #logo {
     width: 200px;
     float: left;
@@ -135,8 +148,9 @@ header {
 #links {
     float: right;
     clear: right;
-    width: 60%;
-    margin-bottom: 10px;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 5px;
 }
 
 #links ul {
@@ -392,7 +406,7 @@ footer {
 /* Stamp Styling */
 .hacker {
     background: url("https://www.colourbox.com/preview/8844172-hacker-stamp.jpg");
-    background-size: auto 50%;
+    background-size: auto 100px;
     background-repeat: no-repeat;
     background-position: 95% 50%;
     background-color: #FFF;
@@ -400,7 +414,7 @@ footer {
 
 .soccer {
     background: url("http://static5.depositphotos.com/1020857/415/v/950/depositphotos_4152819-Soccer-player-stamp.jpg");
-    background-size: auto 50%;
+    background-size: auto 100px;
     background-repeat: no-repeat;
     background-position: 95% 50%;
     background-color: #FFF;
