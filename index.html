@@ -45,26 +45,51 @@
             </header>
             <main>
                 <article>
-                    <div class="status hacker">
-                        <div class="content">
-                            <div class="id">
-                                <div class="profile">
-                                    <div class="image">
-                                    </div>
-                                </div>
-                                <div class="name">
-                                    <h3>Rick Harris</h3>
-                                </div>
-                                <div class="user">
-                                    <h4>@rick.harris</h4>
-                                </div>
-                            </div>
-                            <p>Hanging out at Holberton School! Getting to work on HTML and CSS</p>
+                  <div id="statusForm">
+                    <textarea>
+                    </textarea>
+                    <br>
+                    <label><input type="checkbox">Include Location</label>
+                    <br>
+                    <input type="submit">
+                  </div>
+                  <div id="statusNew">
+                    <a id="newStatus">Post a status</a>
+                  </div>
+                  <div class="post">
+                      <div class="status hacker">
+                          <div class="content">
+                              <div class="id">
+                                  <div class="profile">
+                                      <div class="image">
+                                      </div>
+                                  </div>
+                                  <div class="name">
+                                      <h3>Rick Harris</h3>
+                                  </div>
+                                  <div class="user">
+                                      <h4>@rick.harris</h4>
+                                  </div>
+                              </div>
+                              <p>Hanging out at Holberton School! Getting to work on HTML and CSS</p>
+                          </div>
+                          <div class="posted">
+                                     <p>February 4, 2016 6:30PM</p>
+                          </div>
+                      </div>
+                      <div class="replies">
+                        <a class="reply">Reply</a>
+                        <div id="form1" class="replyForm">
+                          <textarea>
+                          </textarea>
+                          <br>
+                          <label><input type="checkbox">Include Location</label>
+                          <br>
+                          <input type="submit" value="Post">
                         </div>
-                        <div class="posted">
-                                    <p>February 4, 2016 6:30PM</p>
-                        </div>
-                    </div>
+                      </div>
+                  </div>
+                  <div class="post">
                     <div class="status soccer">
                         <div class="content">
                             <div class="id">
@@ -85,6 +110,18 @@
                             <p>February 4, 2016 10:23AM</p>
                         </div>
                     </div>
+                      <div class="replies">
+                        <a class="reply">Reply</a>
+                        <div id="form2" class="replyForm">
+                          <textarea>
+                          </textarea>
+                          <br>
+                          <label><input type="checkbox">Include Location</label>
+                          <br>
+                          <input type="submit" value="Post">
+                        </div>
+                      </div>
+                  </div>
                 </article>
                 <aside>
                     <div class="userProfile">
@@ -124,6 +161,8 @@
                 </script>
             </footer>
         </div>
-        
+
     </body>
+    <script type="text/javascript" src="post_a_status.js"></script>
+    <script type="text/javascript" src="reply.js"></script>
 </html>
