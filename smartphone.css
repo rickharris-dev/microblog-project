@@ -1,7 +1,7 @@
-/* Only modified styling for smartphone break is contained. 
+/* Only modified styling for smartphone break is contained.
 All other styling is handled by style.css */
 
-@media screen 
+@media screen
     and (max-width: 767px) {
     header, main, footer {
         overflow:auto;
@@ -12,20 +12,20 @@ All other styling is handled by style.css */
         margin: 0 auto;
         overflow: auto;
     }
-    
+
     header {
         flex-direction: column;
         justify-content: flex-start;
     }
-        
+
     #hleft {
         text-align: center;
     }
-    
+
     #hright{
         width:100%;
     }
-    
+
     #logo {
         width: 50vw;
         margin:0 auto;
@@ -324,4 +324,3 @@ All other styling is handled by style.css */
         background-color: #FFF;
     }
 }
-
