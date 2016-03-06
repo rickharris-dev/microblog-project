@@ -1,3 +1,6 @@
+/* Only modified styling for midsize break is contained. 
+All other styling is handled by style.css */
+
 @media screen 
     and (min-width: 768px)
     and (max-width: 992px) {
