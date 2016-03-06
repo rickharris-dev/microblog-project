@@ -150,13 +150,43 @@ article {
     clear:left;
 }
 
+#statusNew {
+  text-align: center;
+  background: linear-gradient(#86C8D4, #2AAAC7);
+  padding: 2px;
+  color: #FFF;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+#statusForm {
+  background-color: #444;
+  color: #FFF;
+  text-align: center;
+}
+
+textarea {
+  width: 80%;
+  margin: 5px;
+  height: 75px;
+}
+
+input[type="submit"]{
+  width: 100px;
+  font-size: 14px;
+  background: linen;
+  color: black;
+  margin-bottom: 10px;
+  border-radius: 24px;
+}
+
 .post {
   margin: 0 auto;
 }
 
 .status {
     width:80%;
-    margin:30px auto 5px;
+    margin:30px auto 0px;
     background:#FFF;
     padding: 10px 20px;
     border-radius: 5px;
@@ -232,22 +262,30 @@ article {
     font-size: 14px;
 }
 
-.reply {
-
-}
-
 .replies {
-  width:78%;
-  background-color:#777;
+  width: 78%;
+  background-color: #444;
   margin: 0 auto 5px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  overflow-y: auto;
+  text-align: center;
+  height: 20px;
+  font-size: 16px;
+  line-height: 18px;
+  color: white;
 }
 
 .replyForm {
-  width:100%;
-  background-color:#555;
+  width:78%;
+  margin: 0 auto;
+  text-align: center;
+  background:url("http://design.ubuntu.com/wp-content/uploads/dot-types-wide.gif");
+  border-top: solid 2px #444
+}
+
+.replyForm input[type="submit"]{
+  background-color: black;
+  color: #FFF;
 }
 
 aside {
