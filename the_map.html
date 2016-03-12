@@ -73,6 +73,24 @@ window.addEventListener('resize', function() {
   map.getViewPort().resize();
 });
 
+map.addEventListener('contextmenu', function(e) {
+  e.items.push(new H.util.ContextItem({
+  label: 'Hello Holberton School!',
+  callback: function() {
+    map.setZoom(map.getZoom() + 1);
+  }
+  }));
+});      
+      
+// Add map context menu event listener.
+//map.addEventListener('contextmenu', onContextMenuRequested);
+//.
+//.
+//.
+//function onContextMenuRequested(e) {
+  // TODO: add the context menu item to get the result as shown below.
+//}      
+      
 // Now use the map as required...
 moveMapToBerlin(map);
   </script>
