@@ -1,23 +1,18 @@
-document.addEventListener("DOMContentLoaded", function(){
-  document.getElementById('moreStatuses').style.cursor = 'pointer';
+function addStatuses(response){
+  // Appends statuses to page
+  document.getElementById("allStatuses").innerHTML += response;
+  // Triggers DOMContentLoaded event
+  var DOMContentLoaded_event = document.createEvent("Event");
+  DOMContentLoaded_event.initEvent("DOMContentLoaded", true, true);
+  window.document.dispatchEvent(DOMContentLoaded_event);
+}
 
+document.addEventListener("DOMContentLoaded", function(){
+  // Changes cursor to a pointer when hovering the 'See more statuses' button
+  document.getElementById('moreStatuses').style.cursor = 'pointer';
+  // Load more pages to page when button clicked
   document.getElementById('moreStatuses').addEventListener("click", function(){
-    var xmlhttp;
-    if (window.XMLHttpRequest) {
-      xmlhttp = new XMLHttpRequest();
-    } else {
-      // code for older browsers
-      xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-    }
-    xmlhttp.onreadystatechange = function() {
-      if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-        document.getElementById("allStatuses").innerHTML += xmlhttp.responseText;
-        var DOMContentLoaded_event = document.createEvent("Event");
-        DOMContentLoaded_event.initEvent("DOMContentLoaded", true, true);
-        window.document.dispatchEvent(DOMContentLoaded_event);
-      }
-    };
-    xmlhttp.open("GET", "./statuses-1.html", true);
-    xmlhttp.send();
+    // Calls ajax function
+    ajaxGet("statuses-1.html", addStatuses);
   });
 });
