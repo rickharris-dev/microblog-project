@@ -11,7 +11,9 @@ function ajaxGet(url, onSuccess) {
   xmlhttp.onreadystatechange = function() {
     if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
       // Triggers callback function on success
-      onSuccess(xmlhttp.responseText);
+      setTimeout(function(){
+        onSuccess(xmlhttp.responseText);
+      }, 2000);
     }
   };
   // Initializes request

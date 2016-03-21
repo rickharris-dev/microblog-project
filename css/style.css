@@ -299,13 +299,18 @@ input[type="submit"] {
   border-top: 2px solid black;
 }
 
-#moreStatuses {
+#moreStatuses input {
+  width:100%;
   margin: auto;
   text-align:center;
   padding: 20px;
   background-color: #2AAAC7;
   font-size: 15px;
   color: #FFF;
+}
+
+#moreStatuses input:disabled{
+  background-color: #86C8D4;
 }
 
 aside {
