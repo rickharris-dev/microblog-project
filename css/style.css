@@ -299,6 +299,15 @@ input[type="submit"] {
   border-top: 2px solid black;
 }
 
+#moreStatuses {
+    margin: auto;
+    text-align: center;
+    background-color: #2AAAC7;
+    padding: 15px;
+    font-size: 20px;
+    color: #FFF;
+}
+
 aside {
     width: 35%;
     float:right;
