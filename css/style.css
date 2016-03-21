@@ -300,12 +300,22 @@ input[type="submit"] {
 }
 
 #moreStatuses {
+    width: 100%;
+    text-align: center;
+}
+
+#moreStatuses input {
+    width: 100%;
     margin: auto;
     text-align: center;
     background-color: #2AAAC7;
     padding: 15px;
     font-size: 20px;
     color: #FFF;
+}
+
+#moreStatuses input:disabled {
+    background-color: #86C8D4;
 }
 
 aside {
