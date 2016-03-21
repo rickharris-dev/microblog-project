@@ -4,20 +4,20 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>SoLife | Your Passport to Life</title>
-        <link rel="stylesheet" type="text/css" href="reset.css">
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
         <style>
             .userProfile {
                 width:90%;
                 height:350px;
             }
         </style>
-        <link rel="stylesheet" type="text/css" href="midsize.css">
-        <link rel="stylesheet" type="text/css" href="smartphone.css">
-        <script src="google.js" type="text/javascript"></script>
-        <script src="toggle.js" type="text/javascript"></script>
-        <script src="post_a_status.js" type="text/javascript"></script>
-        <script src="reply.js" type="text/javascript"></script>
+        <link rel="stylesheet" type="text/css" href="css/midsize.css">
+        <link rel="stylesheet" type="text/css" href="css/smartphone.css">
+        <script src="js/google.js" type="text/javascript"></script>
+        <script src="js/toggle.js" type="text/javascript"></script>
+        <script src="js/post_a_status.js" type="text/javascript"></script>
+        <script src="js/reply.js" type="text/javascript"></script>
     </head>
     <body>
         <div id="container">
@@ -52,7 +52,7 @@
                   <div id="statusForm" style="display:none;">
                     <textarea></textarea><br/>
                     <label><input type="checkbox" name="location"/>Include Location</label><br/>
-                    <input type="submit" value="Post"/>
+                    <input type="submit" id="postButton" class="post" value="Post"/>
                   </div>
                   <div id="statusNew">
                     <a id="newStatus">Post a status</a>
@@ -77,42 +77,44 @@
                             <p>February 4, 2016 6:30PM</p>
                           </div>
                         </div>
-                        <div class="replies">
-                          <a class="reply">Reply</a>
+                  <div class="replies">
+                    <a class="reply">Reply</a>
+                  </div>
+                  <div class="replyForm" id="form1" style="display:none;">
+                    <textarea></textarea><br/>
+                    <label><input type="checkbox" name="location"/>Include Location</label><br/>
+                    <input type="submit" class="post" value="Post"/>
+                  </div>
+                  <div class="userReplies"></div>
+                  <div class="status soccer">
+                    <div class="content">
+                        <div class="id">
+                            <div class="profile">
+                                <div class="image">
+                                </div>
+                            </div>
+                            <div class="name">
+                                <h3>Rick Harris</h3>
+                            </div>
+                            <div class="user">
+                                <h4>@rick.harris</h4>
+                            </div>
                         </div>
-                          <div class="replyForm" id="form1" style="display:none;">
-                            <textarea></textarea><br/>
-                            <label><input type="checkbox" name="location"/>Include Location</label><br/>
-                            <input type="submit" value="Post"/>
-                          </div>
-                      <div class="status soccer">
-                          <div class="content">
-                              <div class="id">
-                                  <div class="profile">
-                                      <div class="image">
-                                      </div>
-                                  </div>
-                                  <div class="name">
-                                      <h3>Rick Harris</h3>
-                                  </div>
-                                  <div class="user">
-                                      <h4>@rick.harris</h4>
-                                  </div>
-                              </div>
-                              <p>Tickets for Copa America 2016 in Santa Clara are on sale today. Two tickets for all games in Santa Clara about $2500. That's crazy!</p>
-                          </div>
-                          <div class="posted">
-                              <p>February 4, 2016 10:23AM</p>
-                          </div>
-                        </div>
-                        <div class="replies">
-                          <a class="reply">Reply</a>
-                        </div>
-                          <div class="replyForm" id="form2" style="display:none;">
-                            <textarea></textarea><br/>
-                            <label><input type="checkbox" name="location"/>Include Location</label><br/>
-                            <input type="submit" value="Post"/>
-                          </div>
+                        <p>Tickets for Copa America 2016 in Santa Clara are on sale today. Two tickets for all games in Santa Clara about $2500. That's crazy!</p>
+                    </div>
+                    <div class="posted">
+                        <p>February 4, 2016 10:23AM</p>
+                    </div>
+                  </div>
+                  <div class="replies">
+                    <a class="reply">Reply</a>
+                  </div>
+                  <div class="replyForm" id="form2" style="display:none;">
+                    <textarea></textarea><br/>
+                    <label><input type="checkbox" name="location"/>Include Location</label><br/>
+                    <input type="submit" class="post" value="Post"/>
+                  </div>
+                  <div class="userReplies"></div>
                 </article>
                 <aside>
                     <div class="userProfile">
