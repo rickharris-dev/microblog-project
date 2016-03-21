@@ -171,17 +171,13 @@ textarea {
   height: 75px;
 }
 
-input[type="submit"]{
-  width: 100px;
+input[type="submit"] {
+  width: 75px;
   font-size: 14px;
   background: linen;
   color: black;
   margin-bottom: 10px;
   border-radius: 24px;
-}
-
-.post {
-  margin: 0 auto;
 }
 
 .status {
@@ -190,7 +186,7 @@ input[type="submit"]{
     background:#FFF;
     padding: 10px 20px;
     border-radius: 5px;
-    overflow:auto;
+    overflow-y:auto;
 }
 
 .status p {
@@ -277,15 +273,16 @@ input[type="submit"]{
 
 .replyForm {
   width:78%;
-  margin: 0 auto;
+  margin:0px auto;
   text-align: center;
   background:url("http://design.ubuntu.com/wp-content/uploads/dot-types-wide.gif");
-  border-top: solid 2px #444
+  background-repeat: repeat;
+  border-top: solid 2px #444;
 }
 
-.replyForm input[type="submit"]{
+.replyForm input[type="submit"] {
   background-color: black;
-  color: #FFF;
+  color:white;
 }
 
 aside {
