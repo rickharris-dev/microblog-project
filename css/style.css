@@ -286,6 +286,20 @@ input[type="submit"] {
   color:white;
 }
 
+.userReplies {
+  background-color: #FFF;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.userReply {
+  padding:5px;
+}
+
+.userReply + .userReply {
+  border-top: 2px solid black;
+}
+
 aside {
     width: 35%;
     float:right;
