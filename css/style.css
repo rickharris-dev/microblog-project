@@ -154,14 +154,14 @@ article {
   text-align: center;
   background: linear-gradient(#86C8D4, #2AAAC7);
   padding: 2px;
-  color: white;
+  color: #FFF;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
 
 #statusForm {
-  background: #444;
-  color: white;
+  background-color: #444;
+  color: #FFF;
   text-align: center;
 }
 
@@ -182,7 +182,7 @@ input[type="submit"] {
 
 .status {
     width:80%;
-    margin:30px auto 0;
+    margin:30px auto 0px;
     background:#FFF;
     padding: 10px 20px;
     border-radius: 5px;
