@@ -1,3 +1,4 @@
+
 function addStatuses(response){
   // Appends statuses to page
   document.getElementById("allStatuses").innerHTML += response;
