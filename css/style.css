@@ -187,23 +187,7 @@ input[type="submit"] {
     padding: 10px 20px;
     border-radius: 5px;
     overflow-y:auto;
-}
-
-.status p {
-    font-family:serif;
-    font-size:16px;
-    line-height:20px;
-}
-
-.content {
-    overflow: auto;
-}
-
-.id {
-    float:left;
-    clear:left;
-    margin-right:20px;
-    margin-bottom:5px;
+    position:relative;
 }
 
 .profile {
@@ -214,10 +198,11 @@ input[type="submit"] {
     float:left;
     clear:left;
     border-radius: 5px;
+    margin-right: 20px;
 }
 
-.image {
-    background:url("https://holbertonintranet.s3.amazonaws.com/users/photos/000/000/038/thumb/rick.jpg");
+.profile img {
+    background:url("");
     background-size:100% auto;
     background-color:#FFF;
     width:115px;
@@ -229,33 +214,34 @@ input[type="submit"] {
 .name {
     float:left;
     clear:left;
-}
-
-.name h3 {
     font-size:16px;
     font-weight:bold;
     line-height: 18px;
     margin-top: 5px;
+    margin-right: 20px;
 }
 
 .user {
     float:left;
     clear:left;
-}
-
-.user h4 {
     font-size:14px;
     line-height: 16px;
+    margin-right: 20px;
+}
+
+.post {
+    font-family:serif;
+    font-size:16px;
+    line-height:20px;
+    padding-left: 5px;
 }
 
 .posted {
-    float: right;
-    clear: right;
-    margin-top: 10px;
-}
-
-.posted p {
-    font-size: 14px;
+  position:absolute;
+  bottom: 10px;
+  right: 10px;
+  margin-top: 10px;
+  font-size: 14px;
 }
 
 .replies {
@@ -299,23 +285,18 @@ input[type="submit"] {
   border-top: 2px solid black;
 }
 
-#moreStatuses {
-    width: 100%;
-    text-align: center;
-}
-
 #moreStatuses input {
-    width: 100%;
-    margin: auto;
-    text-align: center;
-    background-color: #2AAAC7;
-    padding: 15px;
-    font-size: 20px;
-    color: #FFF;
+  width:100%;
+  margin: auto;
+  text-align:center;
+  padding: 20px;
+  background-color: #2AAAC7;
+  font-size: 15px;
+  color: #FFF;
 }
 
-#moreStatuses input:disabled {
-    background-color: #86C8D4;
+#moreStatuses input:disabled{
+  background-color: #86C8D4;
 }
 
 aside {
@@ -473,12 +454,42 @@ h1 {
 
 footer {
     height:50px;
-    background:#222;
     clear:both;
-    background:#444;
+    background:url('../images/dark-background.jpg') repeat #444;
     color: #FFF;
     text-align: center;
     padding: 10px 0px;
+}
+
+#footerLinks {
+    margin-bottom: 10px;
+}
+
+#footerLinks ul {
+    list-style-type: none;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#footerLinks ul li {
+
+}
+
+#footerLinks a, a:visited {
+    font-size: 18px;
+    color:#36DAFF;
+    text-decoration:none;
+}
+
+#footerLinks a:hover {
+    color:linen;
+    text-decoration: underline;
+}
+
+#footerLinks ul li + li::before {
+    content: " | ";
+    padding: 5px;
 }
 
 #beta {

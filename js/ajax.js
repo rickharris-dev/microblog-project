@@ -1,22 +1,22 @@
 function ajaxGet(url, onSuccess) {
-    var xmlhttp;
-    // Checks browser version and establishes request
-    if (window.XMLHttpRequest) {
+  var xmlhttp;
+  //Checks browser version and establishes request
+  if (window.XMLHttpRequest) {
     xmlhttp = new XMLHttpRequest();
   } else {
     // code for older browsers
     xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
   }
-    // Trigger when readyState changes
+  // Triggers when readyState changes
   xmlhttp.onreadystatechange = function() {
     if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-    // Triggers callback function on success
-    setTimeout(function(){
+      // Triggers callback function on success
+      setTimeout(function(){
         onSuccess(xmlhttp.responseText);
-    }, 2000);
+      }, 2000);
     }
-  };  
-    // Initializes request 
+  };
+  // Initializes request
   xmlhttp.open("GET", url, true);
-  xmlhttp.send();      
+  xmlhttp.send();
 }
