@@ -330,6 +330,16 @@ aside {
     padding: 20px;
 }
 
+.lifeUsers {
+    text-align: center;
+}
+
+.lifeUsers h1 {
+    font-size: 24px;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
 .userProfile {
     border:solid 1px #2AAAC7;
     border-radius: 10px;
@@ -339,6 +349,16 @@ aside {
     padding: 10px 0;
     margin: 10px 20px;
     float:left;
+}
+
+.userNotable {
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    font-family: sans-serif;
+    font-weight: 400;
 }
 
 .userImage {
@@ -407,6 +427,16 @@ aside {
 .follow ul li a, a:visited {
     color:#444;
     text-decoration: none;
+}
+
+.adventurer {
+    text-align: center;
+}
+
+.adventurer h1 {
+    font-size: 24px;
+    font-family: sans-serif;
+    font-weight: 400;
 }
 
 .trending {
