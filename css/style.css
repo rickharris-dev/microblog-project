@@ -448,16 +448,13 @@ footer {
 
 #footerLinks a, a:visited {
     font-size: 18px;
-    color:#086D7F;
+    color:#36DAFF;
     text-decoration:none;
-    transition: background-color 2s ease,
-                color 2s ease;
 }
 
 #footerLinks a:hover {
     color:linen;
     text-decoration: underline;
-    background-color:#086D7F;
 }
 
 #footerLinks ul li + li::before {
