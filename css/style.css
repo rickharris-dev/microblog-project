@@ -367,7 +367,7 @@ article h2, aside h2 {
   text-align: center;
 }
 
-.userImage img {
+.userImage img, .userImage {
     width: 200px;
     height: 200px;
     margin: 10px auto;
