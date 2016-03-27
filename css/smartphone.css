@@ -7,6 +7,10 @@ All other styling is handled by style.css */
         overflow:auto;
     }
 
+    h3 {
+      text-align: left;
+    }
+
     #container {
         width: 100%;
         margin: 0 auto;

@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function(){
   var statusForm = document.getElementById("statusForm");
   var postButton = document.getElementById("postButton");
 
+  statusForm.style.display = "none";
   newStatus.style.cursor = "pointer";
 
   function triggerToggle(){

@@ -332,14 +332,24 @@ aside {
     float:left;
 }
 
-h1 {
+.userProfile.home {
+    width:90%;
+    height:350px;
+}
+
+article h2, aside h2 {
     font-size: 24px;
     font-family: sans-serif;
     font-weight: 400;
     text-align: center;
+    margin-top: 10px;
 }
 
 .userImage {
+  text-align: center;
+}
+
+.userImage img {
     width: 200px;
     height: 200px;
     margin: 10px auto;
@@ -350,7 +360,7 @@ h1 {
     text-align:center;
 }
 
-.userName h2 {
+.userName h3 {
     font-size: 20px;
     font-family: sans-serif;
 }
