@@ -1,3 +1,23 @@
+<?php
+  $users = [
+    array("id" => 1, "login" => "user1", "password" => "password1", "full_name" => "User 1"),
+    array("id" => 2, "login" => "user2", "password" => "password2", "full_name" => "User 2"),
+    array("id" => 3, "login" => "user3", "password" => "password3", "full_name" => "User 3"),
+  ];
+
+  function userExists($login, $password, $users) {
+    foreach ($users as &$elem) {
+      if ($login == $elem['login'] && $password == $elem['password']){
+        return $elem;
+      } else {
+        return false;
+      }
+    }
+  }
+  if ($_POST['login'])
+    $user = userExists($_POST['login'], $_POST['password'], $users);
+
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -18,6 +38,10 @@
     <body>
         <div id="container">
             <header>
+                <?php
+                if ($user == false && $_POST['login'])
+                  echo "<div id=\"loginError\">Invalid credentials</div>"
+                ?>
                 <div id="hleft">
                     <div id="logo">
                         <img src="http://www3.nd.edu/~rharris8/newsletter/logo.png" alt="SoLife"/>
@@ -30,8 +54,20 @@
                     <div id="account">
                         <ul>
                             <li><a href="#">Edit my profile</a></li>
-                            <li><a href="#">Logout</a></li>
+                            <li><a href="login.php">Logout</a></li>
+                            <li>Hello, <?php
+                              if ($user) {
+                                echo $user['full_name'];
+                              } else {
+                                echo "there";}?>!
+                            </li>
                         </ul>
+                        <?php if ($user) {?>
+                        <ul>
+                          <li>Your rot13'd login is: <?php echo str_rot13($user['login'])?></li>
+                          <li>The length of your login is: <?php echo strlen($user['login']);?></li>
+                        </ul>
+                        <?php } ?>
                     </div>
                     <div id="links">
                         <ul>

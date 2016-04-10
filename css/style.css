@@ -546,6 +546,13 @@ footer {
     font-weight: bold;
 }
 
+#loginError {
+  width: 100%;
+  color: red;
+  font-weight: bold;
+  font-size: 16px;
+}
+
 /* Stamp Styling */
 .hacker {
     background: url("https://www.colourbox.com/preview/8844172-hacker-stamp.jpg");
