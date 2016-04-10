@@ -37,11 +37,11 @@
     </head>
     <body>
         <div id="container">
+          <?php
+          if ($user == false && $_POST)
+            echo "<div id=\"loginError\">Invalid credentials</div>"
+          ?>
             <header>
-                <?php
-                if ($user == false && $_POST['login'])
-                  echo "<div id=\"loginError\">Invalid credentials</div>"
-                ?>
                 <div id="hleft">
                     <div id="logo">
                         <img src="http://www3.nd.edu/~rharris8/newsletter/logo.png" alt="SoLife"/>

@@ -548,9 +548,22 @@ footer {
 
 #loginError {
   width: 100%;
-  color: red;
+  color: white;
   font-weight: bold;
   font-size: 16px;
+  text-align: center;
+  background: red;
+}
+
+#loginForm {
+  width:80%;
+  background: white;
+  margin: 10px auto;
+  text-align: center;
+}
+
+#loginForm div{
+  margin-top: 10px;
 }
 
 /* Stamp Styling */

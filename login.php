@@ -45,11 +45,17 @@
             </header>
             <main>
               <form id="loginForm" method="post" action="index.php">
-                <label for="login">Login: </label>
-                <input name="login" type="text">
-                <label for="password"> Password: </label>
-                <input name="password" type="password">
-                <input type="submit" value="Submit">
+                <div>
+                  <label for="login">Login: </label>
+                  <input name="login" type="text">
+                </div>
+                <div>
+                  <label for="password"> Password: </label>
+                  <input name="password" type="password">
+                </div>
+                <div>
+                  <input type="submit" value="Submit">
+                </div>
               </form>
               <div id="beta">
                 <h2>Welcome to SoLife!</h2>
