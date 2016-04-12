@@ -1,4 +1,34 @@
-<?php include_once 'model/user.php';?>
+<?php
+  include_once 'model/user.php';
+  include_once 'model/status.php';
+  $currentUser = false;
+
+  function userExists($login, $password, $users) {
+    foreach ($users as &$elem) {
+      if ($login == $elem['login'] && $password == $elem['password']){
+        return $elem;
+      } else {
+        return false;
+      }
+    }
+  }
+
+  function checkLogin($login, $users){
+    foreach ($users as &$elem) {
+      if ($login == $elem['login']) {
+        return $elem;
+      }
+    }
+    return false;
+  }
+
+  if (isset($_COOKIE["login"])){
+    $currentUser = checkLogin($_COOKIE["login"],$users);
+  } else if ($_POST['login']){
+    $currentUser = userExists($_POST['login'], $_POST['password'], $users);
+    setcookie("login",$currentUser['login']);
+  }
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
