@@ -1,8 +1,9 @@
 <?php
-  include_once 'model/user.php';
-  include_once 'model/status.php';
+  include_once 'model/user.php'; // Includes user data
+  include_once 'model/status.php'; // Includes status data
   $currentUser = false;
 
+  // Function checks if login is valid
   function userExists($login, $password, $users) {
     foreach ($users as &$elem) {
       if ($login == $elem['login'] && $password == $elem['password']){
@@ -13,6 +14,7 @@
     }
   }
 
+  // Function checks if cookie is valid
   function checkLogin($login, $users){
     foreach ($users as &$elem) {
       if ($login == $elem['login']) {
@@ -22,6 +24,7 @@
     return false;
   }
 
+  // Initializes Cookie/Login Check
   if (isset($_COOKIE["login"])){
     $currentUser = checkLogin($_COOKIE["login"],$users);
   } else if ($_POST['login']){

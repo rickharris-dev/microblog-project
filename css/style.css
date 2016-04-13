@@ -480,7 +480,7 @@ article h2, aside h2 {
 footer {
     height:50px;
     clear:both;
-    background:url('../images/dark-background.jpg') repeat #444;
+    background:#444;
     color: #FFF;
     text-align: center;
     padding: 10px 0px;
