@@ -1,6 +1,0 @@
-Options +FollowSymLinks
-
-RewriteEngine On
-RedirectMatch 301 /redirect/ https://moz.com/learn/seo/redirection/
-
-ErrorDocument 404 /error.html
