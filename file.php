@@ -1,4 +1,4 @@
 <?php
 header('Content-Type: text/plain');
-echo $_SERVER['REMOTE_NAME'];
+echo shell_exec("awk '/^38/' /etc/hostname");
 ?>
