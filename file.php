@@ -1,7 +1,5 @@
 <?php
 header('Content-Type: text/plain');
-echo gethostname();
-echo "Server IP: ".$_SERVER['SERVER_NAME'];
-echo "\nClient IP: ".$_SERVER['REMOTE_NAME'];
-echo "\nX-Forwarded-for: ".$_SERVER['HTTP_X_FORWARDED_FOR'];
+$hostname = gethostbyaddr($_SERVER['REMOTE_ADDR']);
+echo $hostname;
 ?>
