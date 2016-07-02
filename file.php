@@ -1,4 +1,4 @@
 <?php
 header('Content-Type: text/plain');
-echo $_SERVER['SERVER_NAME'];
+echo $_SERVER['REMOTE_NAME'];
 ?>
